@@ -1,4 +1,4 @@
-import { Button, Card, CardActionArea, CardActions, CardContent, CardMedia, Typography, inputAdornmentClasses } from "@mui/material";
+import { Button, Card, CardActionArea, CardActions, CardContent, CardMedia, Typography} from "@mui/material";
 import fototo from "../../img/descarga.jpeg";
 export default function VentaCard() {
   return (
