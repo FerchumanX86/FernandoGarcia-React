@@ -1,19 +1,20 @@
 
-import Footer from "./Footer.jsx";
-import  Home  from "./Home.jsx";
-import { Navbar } from "./Navbar.jsx";
 
+import { NavBar } from "./components/NavBar/NavBar";
+import VentaCard from "./components/VentaCard/VentaCard";
 
-const App = () => {
-  // logica
+function App() {
 
   return (
-    <>
-      <Navbar />
-      <Home />
-      <Footer />
-    </>
-  );
-};
+    <div >
+
+    <NavBar/>
+    <VentaCard/>
+
+    </div>
+
+  )
+  
+}
 
 export default App;
