@@ -1,4 +1,5 @@
 import { Button, Card, CardActionArea, CardActions, CardContent, CardMedia, Typography} from "@mui/material";
+import fototo from "../../img/descarga.jpeg";
 export default function VentaCard() {
   return (
     <Card
@@ -16,11 +17,12 @@ export default function VentaCard() {
             
         <CardActionArea>
 
-        <CardMedia
-        sx={{ height: 240 }}
-        image="https://res.cloudinary.com/dyt2e5vc9/image/upload/v1685443274/MERCADO%20PAVO/OIP_r6m2d2.jpg"
-        
-      />
+                    <CardMedia
+                        
+                        component="img"
+                        image={fototo}
+                        
+                    />
 
             <CardContent >
                 
@@ -58,4 +60,3 @@ export default function VentaCard() {
     </Card>
   );
 }
-

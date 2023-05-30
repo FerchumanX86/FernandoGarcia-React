@@ -1,5 +1,4 @@
-import { Badge, Box, Button, Grid } from "@mui/material";
-import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import { Box, Button, Grid } from "@mui/material";
 
 export const NavBar = () => {
   return (
@@ -10,19 +9,14 @@ export const NavBar = () => {
     >
       <Grid container>
         <Grid item xs={12}>
-          <h1>MercadoPavo </h1>
+          <img
+            src="https://res.cloudinary.com/dyt2e5vc9/image/upload/v1685443169/MERCADO%20PAVO/mercado_pavo_hmqwrz.png"
+            height={100}
+          />
         </Grid>
 
         <Grid item xs={11}>
           <Button variant="contained">NAVBAR🍔</Button>
-        </Grid>
-
-        <Grid>
-          <div>
-            <Badge badgeContent={69} color="primary">
-              <ShoppingCartIcon fontSize="large" color="secondary" />
-            </Badge>
-          </div>
         </Grid>
       </Grid>
     </Box>
