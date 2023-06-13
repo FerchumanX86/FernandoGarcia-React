@@ -1,0 +1,27 @@
+.count-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .count-button {
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: #f5f5f5;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .count {
+    margin: 0 16px;
+    font-size: 18px;
+  }
+  
+  .add-to-cart-button {
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: #42b983;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  

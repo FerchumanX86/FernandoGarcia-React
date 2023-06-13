@@ -1,5 +1,5 @@
 const Counter = ( {contador, setContador} ) => { 
-//   aca conecte con las prop
+
     return (
       <div>
         <h2>{contador}</h2>

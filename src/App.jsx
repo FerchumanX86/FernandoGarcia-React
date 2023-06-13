@@ -1,28 +1,38 @@
-import { Grid } from "@mui/material";
-import { Carrito } from "./components/Carrito/Carrito";
-import { NavBar } from "./components/NavBar/NavBar";
-import VentaCard from "./components/VentaCard/VentaCard";
+import Layout from "./components/layout/Layout";
 
-function App() {
+import CartContainer from "./components/pages/cart/CartContainer";
+import ProductDetailContainer from "./components/pages/productDetail/ProductDetailContainer.jsx";
+import ProductsListContainer from "./components/pages/productsList/ProductsListContainer";
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+const App = () => {
   return (
-    <div>
-      <Grid container>
-        
-        <Grid item xs = {10}>
-          <NavBar />
-        </Grid>
+    <BrowserRouter>
+      <Routes>
+        <Route element={<Layout />}>
+          <Route path="/" element={<ProductsListContainer />} />
 
-        <Grid item xs={1}>
-          <Carrito />
-        </Grid>
+          <Route path="/category/:categoryName" element={<ProductsListContainer />} />
 
-        <Grid>
-          <VentaCard />
-        </Grid>
+          <Route path="/itemDetail/:id" element={<ProductDetailContainer />} />
+          
+          <Route path="/carrito" element={<CartContainer />} />
+        </Route>
 
-      </Grid>
-    </div>
+        <Route path="*" element={<h1>404 not found</h1>} />
+      </Routes>
+    </BrowserRouter>
   );
-}
+};
 
 export default App;
+
+{
+  /* <div>
+      <Navbar>
+        <ProductsListContainer />
+        <ProductDetailContainer />
+      </Navbar>
+    </div> */
+}
