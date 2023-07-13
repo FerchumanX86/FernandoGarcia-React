@@ -1,6 +1,6 @@
 import { Badge, Button } from "@mui/material";
 import { BsFillCartCheckFill } from "react-icons/bs";
-import styles from "./Navbar.module.css";
+import styles from "./NavBar.module.css";
 
 import { Link } from "react-router-dom";
 import { menuNavigate } from "../../../routes/menuNavigate";
