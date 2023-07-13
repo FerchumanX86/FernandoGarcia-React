@@ -1,0 +1,18 @@
+export const menuNavigate = [
+  { id:"inicio",
+    path: "/",
+    title: "inicio",
+  },
+  { id:"teclados",
+    path: "/category/teclados",
+    title: "Teclados",
+  },
+  { id:"monitor",
+    path: "/category/monitor",
+    title: "Monitor",
+  },
+  { id:"cpu",
+    path: "/category/cpu",
+    title: "CPU",
+  },
+];
